@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+
+	<div class="container py-5 my-5">
+		<div class="row justify-content-center">
+			<div class="col-sm-5">
+				<input id="cal" type="text" readonly="readonly" class="form-control">
+			<div class="row no-gutters">
+				<button class="btn-sm btn-gray col-3" onclick="seven()">7</button>
+				<button class="btn-sm btn-gray col-3" onclick="eight()">8</button>
+
+				<button class="btn-sm btn-gray col-3" onclick="nine()">9</button>
+				<button class="btn-sm btn-gray col-3" onclick="add()">+</button>
+				
+			</div>
+			<div class="row no-gutters">
+				<button class="btn-sm btn-gray col-3" onclick="four()">4</button>
+				<button class="btn-sm btn-gray col-3" onclick="five()">5</button>
+				<button class="btn-sm btn-gray col-3" onclick="six()">6</button>
+				
+
+				<button class="btn-sm btn-gray col-3" onclick="sub()">-</button>
+			</div>
+			<div class="row no-gutters">
+				<button class="btn-sm btn-gray col-3" onclick="one()">1</button>
+				<button class="btn-sm btn-gray col-3" onclick="two()">2</button>
+				<button class="btn-sm btn-gray col-3" onclick="three()">3</button>
+				<button class="btn-sm btn-gray col-3" onclick="mul()">*</button>
+			</div>
+			<div class="row no-gutters">
+
+				<button class="btn-sm btn-gray col-3" onclick="zero()">0</button>
+				<button class="btn-sm btn-gray col-3" onclick="clr()">Clr</button>
+				<button class="btn-sm btn-gray col-3" onclick="eql()">=</button>
+				<button class="btn-sm btn-gray col-3" onclick="div()">/</button>
+			</div>
+			<div class="row no-gutters">
+				<button class="btn-sm btn-gray col-12" onclick="dlt()">Dlt</button>
+			</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<script>
+		var c= document.getElementById('cal');
+
+		function one()
+		{
+			c.value+="1";
+		}
+		function two()
+		{
+			c.value+="2";
+		}
+		function three()
+		{
+			c.value+="3";
+		}
+		function four()
+		{
+			c.value+="4";
+		}
+		function five()
+		{
+			c.value+="5";
+		}
+		function six()
+		{
+			c.value+="6";
+		}
+		function seven()
+		{
+			c.value+="7";
+		}
+		function eight()
+		{
+			c.value+="8";
+		}
+		function nine()
+		{
+			c.value+="9";
+		}
+		function zero()
+		{
+			c.value+="0";
+		}
+		function add()
+		{
+			c.value+="+";
+		}
+		function sub()
+		{
+			c.value+="-";
+		}
+		function mul()
+		{
+			c.value+="*";
+		}
+		function div()
+		{
+			c.value+="/";
+		}
+		function eql()
+		{
+			c.value = eval(c.value);
+		}
+		function clr()
+		{
+			c.value = "";
+		}
+		function dlt()
+		{
+			var a=c.value;
+			c.value = a.substring(0,a.length-1);
+		}
+	</script>
+</body>
+</html>
